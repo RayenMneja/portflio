@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="author" content="Rayen Mneja">
+    <meta http-equiv="Content-Language" content="en">
+    <link rel="icon" type="image/png" href="logo white.png">
+    <meta property="og:title" content="portfolios Rayen Mneja ">
+    <title>portfolio</title>
+</head>
+<body>
+    <header class="h">
+        <img src="logo white.png" alt="#" id="img">
+        <ul id="ul">
+            <li class="li"><a href="index.html" class="header">home</a></li><li class="li"><a href="information.html" class="header">information</a></li><li class="li"><a href="#" class="header" style="zoom: 110%;
+                border-bottom: 2px solid #fff ;">contact</a></li>
+        </ul>
+    </header><hr style="size: 4px; color: #fff;"><br>
+    <center>
+        <div class="it">
+            <div class="z">
+                <p style="font-size: 40px; color: #fff; margin-bottom: 40px; font-family: 'Courier New', Courier, monospace; ">For more information contact me</p><br>
+                <p class="a" style="font-size:30px;;"><ion-icon name="globe-outline"></ion-icon>adders: <p style="font-size:large; margin: 5px; color: #fff;;">  Tunis, sfax</p></p>
+            </div>
+            <div class="z">
+                <p  style="font-size:25px; margin: 5px; color: #fff;"><ion-icon name="call-outline"></ion-icon> tel: 93455484</p>
+            </div>
+            <div class="z">
+                <p  style="font-size:20px; margin: 5px ; color: #fff;"><ion-icon name="mail-outline"></ion-icon>Email: rayenmneja2006@gmail.com</p>
+            </div>
+            <div class="z">
+                <p class="a"style="font-size:30px;">platform:</p>
+                <p style="margin-top: 10px;" ><a href="https://www.facebook.com/rayen.mneja.9" class="b"><ion-icon name="logo-facebook"></ion-icon></a><a href="https://www.instagram.com/rayen_mneja1/" class="b"><ion-icon name="logo-instagram"></ion-icon></a><a href="https://github.com/RayenMneja" class="b"><ion-icon name="logo-github"></ion-icon></a></p>
+            </div>
+        </div>
+    <div class="he">
+
+        <form name="contact-form" method="post">
+            <div class="input-g">
+                <input type="text" id="name" name="name" required>
+                <label for="name" ><ion-icon name="person"></ion-icon>Your Name</label>
+            </div>
+            <div class="input-g">
+                <input type="text" id="number" name="nemero" required>
+                <label for="number"><ion-icon name="call"></ion-icon> Phone No</label>
+            </div>
+            <div class="input-g">
+                <input type="email" id="email" name="Email" required>
+                <label for="email"><ion-icon name="mail"></ion-icon> Your Email</label>
+            </div>
+            <div class="input-g">
+                <input type="text" id="message" name="message" required>
+                <label for="message"><ion-icon name="send"></ion-icon></label>
+            </div>
+            <button type="submit" value="submit" > submit <span style="width: 10px; height: 10px; "><ion-icon name="rocket-outline"></ion-icon></span></button>
+        </form>
+    </div>
+</center>
+<footer class="site-footer"><hr>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-6 col-xs-12">
+            <ul id="ul">
+                <li class="li"><a href="index.html" class="header">home</a></li><li class="li"><a href="information.html" class="header" >information</a></li><li class="li"><a href="#" class="header" style="zoom: 110%;border-bottom: 2px solid #fff ;">contact</a></li>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p style="margin-top: 10px;" ><a href="https://www.facebook.com/rayen.mneja.9" class="b"><ion-icon name="logo-facebook"></ion-icon></a><a href="https://www.instagram.com/rayen_mneja1/" class="b"><ion-icon name="logo-instagram"></ion-icon></a><a href="https://github.com/RayenMneja" class="b"><ion-icon name="logo-github"></ion-icon></a></p>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text" style="color: #fff;" >Copyright &copy; 2023 All Rights Reserved by 
+         <a href="#" style="color: #fff;">Rayen-Mneja</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+</footer>
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script>
+    
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxLBnMwAWsR9Y3gC_nFrzE81pl4dTCEc0BuCilCZDkCTha9CJEH49L1TQGVCfkoGgdX/exec'
+
+const form = document.forms['contact-form']
+
+form.addEventListener('submit', e => {
+  e.preventDefault()
+  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+  .then(response => alert("Thank you! your form is submitted successfully." ))
+  .then(() => { window.location.reload(); })
+  .catch(error => console.error('Error!', error.message))
+})
+</script>
+</body>
+</html>
+    
+</body>
+</html>
