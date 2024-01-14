@@ -224,7 +224,7 @@ h2{
     }
     .oo,.dd{
         display:block;
-        max-width: 300px;
+        width: 70%;
         
     }
     .dd{
